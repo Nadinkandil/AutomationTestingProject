@@ -13,11 +13,12 @@ public class BaseTests {
     @BeforeClass
     public void setUp(){
         driver=new ChromeDriver();
+//        driver.manage().window().maximize();
         driver.get("https://demo.nopcommerce.com/");
         homePage=new HomePage(driver);
     }
-    @AfterClass
-    public void tearDown(){
-         driver.quit();
-     }
+//    @AfterClass
+//    public void tearDown(){
+//         driver.quit();
+//     }
 }
